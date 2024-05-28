@@ -1,0 +1,35 @@
+[data-theme="light"] {
+  --main-background-color: #f9f9f9;
+  --main-text-color: black;
+  --table-header-text-color: #555;
+  --table-data-text-color: #333;
+  --table-list-hover-color: #f1f1f1;
+  --table-list-even-row-color: #f9f9f9;
+  --table-list-background-color: white;
+  --navbar-btn-color: #444;
+  --navbar-btn-text-color: white;
+  --navbar-btn-hover-color: gray;
+  --navbar-option-text-color: rgb(110, 110, 110);
+  --navbar-option-text-hover-color: #dadada;
+  --navbar-login-btn-background-color: #444;
+  --navbar-login-btn-text-color: white;
+  --navbar-login-btn-hover-color: gray;
+}
+  
+[data-theme="dark"] {  
+  --main-background-color: #3b3b3b;
+  --main-text-color: rgb(185, 185, 185);
+  --table-header-text-color: #d1d1d1;
+  --table-data-text-color: #CCCCCC;
+  --table-list-hover-color: #5a5a5a;
+  --table-list-even-row-color: #4d4d4d;
+  --table-list-background-color: rgb(66, 66, 66);
+  --navbar-btn-color: #ffffff;
+  --navbar-btn-text-color: rgb(77, 77, 77);
+  --navbar-btn-hover-color: #8f8f8f;
+  --navbar-option-text-color: #ddd;
+  --navbar-option-text-hover-color: #636363;
+  --navbar-login-btn-background-color: #ffffff;
+  --navbar-login-btn-text-color: rgb(77, 77, 77);
+  --navbar-login-btn-hover-color: #8f8f8f;
+}

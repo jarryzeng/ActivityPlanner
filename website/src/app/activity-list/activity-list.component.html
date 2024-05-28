@@ -1,0 +1,20 @@
+<div class="activity-list-container">
+    <table class="activity-list">
+        <thead>
+            <tr>
+                <th class="list-header">活動時間</th>
+                <th class="list-header">發起人</th>
+                <th class="list-header">活動名稱</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(activity of activity_list; track activity){
+                <tr class="list-row">
+                    <td class="list-data">{{ activity.time }}</td>
+                    <td class="list-data">{{ activity.organizer }}</td>
+                    <td class="list-data">{{ activity.describet }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

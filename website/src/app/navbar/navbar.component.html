@@ -1,0 +1,13 @@
+<div class="navbar-container">
+    <button class="open_navbar_btn" (click)="navbar_switch()">☰<span class="navbar_btn_text">關閉選單</span></button>
+    <div class="sidebar" id="sidebar">
+        <div>
+            @for(item of allItems;track item){
+                <a href="{{ item.url }}" class="sidebar-option" (click)="settitle(item.description)">{{ item.description }}</a>
+            }
+        </div>
+        <div class="login-button-container">
+            <a href="#" class="login-button">登入</a>
+        </div>
+    </div>
+</div>

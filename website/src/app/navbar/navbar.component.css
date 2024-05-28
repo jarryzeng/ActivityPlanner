@@ -1,0 +1,84 @@
+.navbar-container {
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 5%);
+}
+
+.navbar-container .open_navbar_btn {
+    font-size: 20px;
+    height: 53px;
+    width: 180px;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    text-wrap: nowrap;
+    background-color: var(--navbar-btn-color);
+    color: var(--navbar-btn-text-color);
+    transition: width 0.3s;
+}
+
+.navbar-container .open_navbar_btn.close{
+    width: 53px;
+}
+
+.navbar-container .navbar_btn_text.close{
+    display: none;
+}
+
+.navbar-container .open_navbar_btn:hover {
+    background-color: var(--navbar-btn-hover-color);
+}
+
+.navbar-container .sidebar {
+    height: calc(100% - 53px);
+    width: 180px;
+    overflow: hidden;
+    background-color: var(--main-background-color);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.navbar-container .sidebar.close{
+    width: 0;
+}
+
+.navbar-container .sidebar .sidebar-option {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--navbar-option-text-color);
+    display: block;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.navbar-container .sidebar .sidebar-option:hover {
+    background-color: var(--navbar-option-text-hover-color);
+} 
+
+.navbar-container .sidebar .login-button-container{
+    overflow: hidden;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: 40px;
+    padding: 10px 20px;
+    background-color: var(--navbar-login-btn-background-color);
+    cursor: pointer;
+}
+
+.navbar-container .sidebar .login-button-container .login-button {
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-login-btn-text-color);
+    
+}
+
+.navbar-container .sidebar .login-button-container:hover,
+.navbar-container .sidebar  .login-button:hover {
+    background-color: var(--navbar-login-btn-hover-color);
+}

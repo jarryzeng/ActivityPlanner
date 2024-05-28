@@ -1,0 +1,45 @@
+.activity-list-container {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-background-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.activity-list {
+    background-color: var(--table-list-background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.activity-list .list-header, .activity-list .list-data {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.activity-list .list-header {
+    font-size: 22px;
+    background-color: var(--table-list-even-row-color);
+    color: var(--table-header-text-color);
+}
+
+.activity-list .list-row:nth-child(even) {
+    background-color: var(--table-list-even-row-color);
+}
+
+.activity-list .list-row:hover {
+    background-color: var(--table-list-hover-color);
+}
+
+.activity-list .list-data {
+    color: var(--table-data-text-color);
+}

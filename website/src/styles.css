@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "_themes.css";
+
+body, html{
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color: var(--main-background-color);
+}
