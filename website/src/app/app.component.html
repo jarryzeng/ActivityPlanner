@@ -1,0 +1,20 @@
+<div class="title-container">
+  <h1 class="title" style="line-height: 30px; position: relative; left: 0;">{{ title }}</h1>
+  <div class="dark_light_switch">
+    <input 
+      type="checkbox" 
+      id="toggle" 
+      class="toggleCheckbox" 
+      (click)="onThemeSwitchChange()"
+    />
+    <label for="toggle" class='toggleContainer'>
+      <div style="user-select: none;">light</div>   
+      <div style="user-select: none;">dark</div>
+    </label>
+  </div>
+</div>
+<hr style="height: 2px; background: gray; margin: 0;"/>
+<div class="main_page_container">
+  <app-navbar (setTitle)="setTitle($event)"></app-navbar>
+  <app-activity-list style="width: 100%;"></app-activity-list>
+</div>
